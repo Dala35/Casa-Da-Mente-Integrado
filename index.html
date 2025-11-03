@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA DA MENTE™ - Protótipo</title>
+    <!-- Incluindo Tailwind CSS para estilização moderna e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos customizados e configurações de fonte */
+        :root {
+            --color-primary: #34495e; /* Azul Escuro */
+            --color-secondary: #1abc9c; /* Verde Água/Teal */
+            --color-accent: #3498db; /* Azul Claro */
+        }
+
+        /* Configuração de Fonte: Usando Inter com fallback para Sans-Serif */
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Cor de fundo suave */
+            color: #333;
+        }
+        
+        /* Garantir que as seções tenham bom espaçamento */
+        section {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 40px;
+        }
+
+        /* Estilo de links do protocolo para lista com ícone */
+        .protocolo ul {
+            list-style: none; /* Remove bullet padrão */
+            padding-left: 0;
+        }
+
+        .protocolo li::before {
+            content: "✨"; /* Ícone de Estrela/Brilho */
+            margin-right: 10px;
+            color: var(--color-secondary);
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        // Configuração do Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'blue-800': '#34495e',
+                        'teal-500': '#1abc9c',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Cabeçalho (Header) -->
+    <header class="bg-blue-800 text-white p-5 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight">CASA DA MENTE™</h1>
+            <p class="text-lg mt-1 font-light opacity-80">Sistema Integrado de Reabilitação Neuroafetiva e Cognitiva</p>
+        </div>
+    </header>
+
+    <!-- Navegação (Navbar) -->
+    <nav class="sticky top-0 z-10 bg-gray-700 shadow-xl">
+        <ul class="flex justify-center space-x-3 md:space-x-6 py-3 px-2 overflow-x-auto whitespace-nowrap">
+            <li><a href="#home" class="text-white hover:text-teal-400 transition duration-300 font-medium p-1 md:p-2 rounded-lg">Início</a></li>
+            <li><a href="#sobre" class="text-white hover:text-teal-400 transition duration-300 font-medium p-1 md:p-2 rounded-lg">Sobre</a></li>
+            <li><a href="#protocolo" class="text-white hover:text-teal-400 transition duration-300 font-medium p-1 md:p-2 rounded-lg">Protocolo</a></li>
+            <li><a href="#links" class="text-white hover:text-teal-400 transition duration-300 font-medium p-1 md:p-2 rounded-lg">Versões</a></li>
+            <li><a href="#contato" class="text-white hover:text-teal-400 transition duration-300 font-medium p-1 md:p-2 rounded-lg">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <!-- Seção Início -->
+        <section id="home" class="bg-white rounded-xl shadow-2xl mb-12 p-8 text-center border-t-4 border-teal-500">
+            <div class="banner">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-blue-800 mb-4">Bem-vindo ao CASA DA MENTE™</h2>
+                <p class="text-xl text-gray-600">Transforme a saúde mental com inovação, ciência e tecnologia de ponta.</p>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="bg-white rounded-xl shadow-lg mb-12 p-8">
+            <h2 class="text-2xl font-bold border-b-2 border-teal-500 pb-2 mb-6 text-gray-800">Sobre o Projeto</h2>
+            <p class="text-lg text-gray-700">O CASA DA MENTE™ oferece um protocolo neuropsicológico baseado em ciência e inovação para reabilitação de
+                condições como TEA, TDAH, depressão e ansiedade. Nosso objetivo é integrar o afeto humano com intervenções neurocientíficas e tecnológicas.</p>
+        </section>
+
+        <!-- Seção Protocolo -->
+        <section id="protocolo" class="bg-white rounded-xl shadow-lg mb-12 p-8">
+            <h2 class="text-2xl font-bold border-b-2 border-teal-500 pb-2 mb-6 text-gray-800">O Protocolo CASA DA MENTE™</h2>
+            <div class="protocolo">
+                <h3 class="text-xl font-semibold text-blue-700 mb-4">Pilares Fundamentais</h3>
+                <ul class="space-y-3 pl-0">
+                    <li class="text-gray-700"><strong>Estimulação Multissensorial Controlada</strong>: Ambientes terapêuticos personalizados para otimizar o processamento sensorial.</li>
+                    <li class="text-gray-700"><strong>Neuroacústica Direcionada</strong>: Uso de frequências sonoras específicas para modulação de estados cerebrais.</li>
+                    <li class="text-gray-700"><strong>Interação Afetiva Mediadas por IA</strong>: Sistemas de inteligência artificial que auxiliam na mediação e análise de interações sociais e emocionais.</li>
+                    <li class="text-gray-700"><strong>Suplementação Neurotrófica Natural</strong>: Orientações baseadas em nutrientes que suportam a saúde e plasticidade neural.</li>
+                    <li class="text-gray-700"><strong>Treino Cognitivo com Feedback Imediato</strong>: Tarefas de foco e memória com respostas em tempo real para maximizar a aprendizagem.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Versões/Links -->
+        <section id="links" class="bg-white rounded-xl shadow-lg mb-12 p-8">
+            <h2 class="text-2xl font-bold border-b-2 border-teal-500 pb-2 mb-6 text-gray-800">Versões do CASA DA MENTE™</h2>
+            <div class="versions">
+                <ul class="space-y-3 list-disc list-inside ml-4">
+                    <li><a href="https://link-para-versao-1.com" target="_blank" class="text-blue-600 hover:text-teal-600 font-medium transition duration-300 underline">Versão 1 - CASA DA MENTE™</a> (Foco em TDAH e Foco)</li>
+                    <li><a href="https://link-para-versao-2.com" target="_blank" class="text-blue-600 hover:text-teal-600 font-medium transition duration-300 underline">Versão 2 - CASA DA MENTE™</a> (Foco em TEA e Habilidades Sociais)</li>
+                    <li><a href="https://link-para-versao-3.com" target="_blank" class="text-blue-600 hover:text-teal-600 font-medium transition duration-300 underline">Versão 3 - CASA DA MENTE™</a> (Foco em Depressão e Regulação Afetiva)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="bg-white rounded-xl shadow-lg mb-12 p-8 border-b-4 border-blue-800">
+            <h2 class="text-2xl font-bold border-b-2 border-teal-500 pb-2 mb-6 text-gray-800">Contato</h2>
+            <p class="mb-6 text-gray-700">Entre em contato conosco para mais informações sobre o projeto ou sobre como implementar o CASA DA MENTE™.</p>
+            
+            <div class="space-y-4 mb-8">
+                <p class="text-lg text-gray-700">
+                    <strong class="font-semibold text-blue-800">E-mail:</strong> 
+                    <a href="mailto:dala.cure.os@gmail.com" class="text-teal-600 hover:text-blue-800 transition duration-300 underline font-medium">dala.cure.os@gmail.com</a>
+                </p>
+                <p class="text-lg text-gray-700">
+                    <strong class="font-semibold text-blue-800">WhatsApp:</strong> 
+                    <a href="https://wa.me/5524924988058" target="_blank" class="text-teal-600 hover:text-blue-800 transition duration-300 underline font-medium">+55 24 99248-8058</a>
+                </p>
+            </div>
+
+            <form id="contactForm" action="#" class="space-y-4 bg-gray-100 p-6 rounded-lg shadow-inner border border-gray-200">
+                <label for="nome" class="block text-sm font-medium text-gray-700">Nome:</label>
+                <input type="text" id="nome" name="nome" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-150 shadow-sm">
+
+                <label for="email" class="block text-sm font-medium text-gray-700">E-mail:</label>
+                <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-150 shadow-sm">
+
+                <label for="mensagem" class="block text-sm font-medium text-gray-700">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-150 shadow-sm"></textarea>
+
+                <button type="submit" class="w-full py-3 bg-teal-500 text-white font-semibold rounded-lg hover:bg-teal-600 transition duration-300 shadow-md">
+                    Enviar Mensagem
+                </button>
+                <!-- Caixa de Mensagem para feedback do formulário -->
+                <div id="messageBox" class="text-center p-3 mt-4 hidden rounded-lg font-medium" role="alert"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8 shadow-inner">
+        <p class="text-sm">&copy; 2025 CASA DA MENTE™ - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        // Função para exibir mensagem de sucesso/erro (substitui o alert())
+        function showMessage(message, type) {
+            const messageBox = document.getElementById('messageBox');
+            messageBox.textContent = message;
+            messageBox.classList.remove('hidden', 'bg-green-100', 'text-green-700', 'border-green-400', 'bg-red-100', 'text-red-700', 'border-red-400');
+            
+            if (type === 'success') {
+                messageBox.classList.add('bg-green-100', 'text-green-700', 'border', 'border-green-400');
+            } else {
+                messageBox.classList.add('bg-red-100', 'text-red-700', 'border', 'border-red-400');
+            }
+            
+            // Esconder a caixa de mensagem após 4 segundos
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+            }, 4000);
+        }
+
+        // Lógica de manipulação do formulário
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); 
+
+            let nome = document.getElementById('nome').value;
+            let email = document.getElementById('email').value;
+            let mensagem = document.getElementById('mensagem').value;
+
+            if (nome.trim() === "" || email.trim() === "" || mensagem.trim() === "") {
+                showMessage("Por favor, preencha todos os campos obrigatórios!", 'error');
+            } else {
+                // Simulação de envio bem-sucedido
+                showMessage("Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.", 'success');
+                this.reset(); // Limpa o formulário
+            }
+        });
+
+        // Função para suavizar o scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Usa window.scrollTo para garantir compatibilidade e comportamento suave
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
